@@ -1,0 +1,35 @@
+<main>
+    <div>
+        <h1>Questão 2</h1>
+        <button (click)="close()" id="close" type="button" mat-icon-button>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <section mat-dialog-content>
+        <h3>
+            Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores
+            anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde,
+            informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número
+            informado pertence ou não a sequência. <br><br>
+
+            IMPORTANTE:
+            Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente
+            definido no código <br>
+        </h3>
+
+        <form [formGroup]="numeroForm">
+
+            <mat-form-field appearance="fill">
+                <mat-label>Digite o número</mat-label>
+                <input type="number" matInput name="numero" formControlName="numero">
+            </mat-form-field>
+        </form>
+
+        <button (click)="botaoResposta()" mat-raised-button color="primary">
+            Resposta
+        </button>
+
+        <p *ngIf="resposta">{{ mensagem }}</p>
+    </section>
+</main>

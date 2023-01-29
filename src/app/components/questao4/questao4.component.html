@@ -1,0 +1,28 @@
+<main>
+    <div>
+        <h1>Questão 4</h1>
+        <button (click)="close()" id="close" type="button" mat-icon-button>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <section mat-dialog-content>
+        <h3>
+            Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado: <br><br>
+
+            SP - R$67.836,43<br>
+            RJ - R$36.678,66<br>
+            MG - R$29.229,88<br>
+            ES - R$27.165,48<br>
+            Outros - R$19.849,53<br><br>
+
+            Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.
+        </h3>
+
+        <button (click)="botaoResposta()" mat-raised-button color="primary">
+            Resposta
+        </button>
+
+        <p *ngIf="resposta">{{ mensagem[0] }} <br> {{ mensagem[1] }} <br> {{ mensagem[2] }} <br> {{ mensagem[3] }} <br> {{ mensagem[4] }}</p>
+    </section>
+</main>

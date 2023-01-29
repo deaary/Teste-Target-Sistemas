@@ -1,0 +1,17 @@
+main {
+    min-height: 100vh;
+    background-color: rgb(86, 124, 196);
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    padding-top: 10%;
+}
+
+button {
+    justify-content: space-between;
+    margin-bottom: 1%;
+    padding: 10px;
+}

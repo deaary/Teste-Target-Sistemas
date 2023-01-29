@@ -1,0 +1,35 @@
+<main>
+    <div>
+
+        <h1>Questão 5</h1>
+        <button (click)="close()" id="close" type="button" mat-icon-button>
+            <mat-icon>close</mat-icon>
+        </button>
+
+    </div>
+
+    <section mat-dialog-content>
+        <h3>
+            Escreva um programa que inverta os caracteres de um string. <br><br>
+
+            IMPORTANTE:<br>
+            a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente
+            definida no código;<br>
+            b) Evite usar funções prontas, como, por exemplo, reverse;
+        </h3>
+
+        <form [formGroup]="palavraForm">
+
+            <mat-form-field appearance="fill">
+                <mat-label>Digite a palavra</mat-label>
+                <input type="text" matInput name="palavra" formControlName="palavra">
+            </mat-form-field>
+        </form>
+
+        <button (click)="botaoResposta()" mat-raised-button color="primary">
+            Resposta
+        </button>
+
+        <p *ngIf="resposta">{{ mensagem }}</p>
+    </section>
+</main>

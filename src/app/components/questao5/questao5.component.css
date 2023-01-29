@@ -1,0 +1,27 @@
+#close {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+main {
+    background-color: rgb(43, 79, 83);
+}
+
+section .mat-dialog-content {
+    overflow-x: hidden;
+}
